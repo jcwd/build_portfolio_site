@@ -1,0 +1,34 @@
+
+/*
+* {
+    border: 1px solid red !important;
+}
+*/
+
+.pagetext {
+    color: #747704;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 100;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h5 {
+    text-transform: lowercase;
+}
+
+.lightertext {
+    color: #bcbbbb;
+}
+
+hr {
+    border-color: #bcbbbb;
+    height: 10px;
+    color: #bcbbbb;
+}
