@@ -1,5 +1,5 @@
 
-/*
+/
 * {
     border: 1px solid red !important;
 }
@@ -10,15 +10,6 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-h1 {
-    font-size: 55px;
-    font-weight: 100;
-}
-
-h2 {
-    font-weight: 600;
-}
-
 h5 {
     text-transform: lowercase;
 }
@@ -27,8 +18,143 @@ h5 {
     color: #bcbbbb;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* this sets up cross browser box sizing */
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+/* this is how I set the font family for all my text */
+
+@media only screen and (max-width: 500px) {
+    P {
+        display: none;
+    }
+}
+/* the above is very cool, when the screen width goes under 500px the p element vanishes */
+
+body {
+    background-color: #FBFBFB;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+/* this is an alternative to box sizing for ensuring the boxes go inline */
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+    overflow: auto;
+    max-height: 290px;
+    /* the above overflow class withing the .col-4 class enables text to overflow and scrol within this column class (note this only works because I added a max height to the box thus limiting the space) */
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+p {
+    margin: 10px;
+    color: #42A5F5;
+}
+/* the above margin applies to all p elements and heeps them 10 px from the edge of the box */
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    color: #42A5F5;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #42A5F5;
+}
+
+h3 {
+    text-transform: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border: 10px;
+    color: #42A5F5;
+}
+
 hr {
-    border-color: #bcbbbb;
-    height: 10px;
-    color: #bcbbbb;
+    width: 100%;
+    color: hsla(212, 80%, 42%, 0.29);
+    background-color: hsla(212, 80%, 42%, 0.29);
+    height: 5px
+}
+
+.topright {
+    position: absolute;
+    top: 3em;
+    text-align: center;
+    width: 100%;
+    padding: 4px;
+    color: red;
+    background-color: none;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.missiontext {
+    color: #FBFBFB;
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
+    font-weight: 10;
+    max-width: 100%;
 }
