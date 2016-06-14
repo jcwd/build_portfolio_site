@@ -53,6 +53,8 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
 /* this is an alternative to box sizing for ensuring the boxes go inline */
 }
 
