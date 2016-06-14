@@ -46,6 +46,10 @@ header {
 img {
     background-size: cover;
 }
+
+.nameplate {
+    text-align: center;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
