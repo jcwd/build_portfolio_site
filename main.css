@@ -1,11 +1,4 @@
 
-/*
-* {
-    border: 1px solid red !important;
-}
-*/
-
-/* this sets up a border to easily see our columns settup */
 
 * {
     -webkit-box-sizing: border-box;
@@ -15,11 +8,24 @@
 }
 /* this sets up cross browser box sizing */
 
+
+body, header, nav, footer, section, article, div, .container, .topright, .missiontext {
+border: 1px solid red !important;
+}
+/* this sets up a border to easily see our columns settup */
+
 * {
     font-family: 'Quicksand', sans-serif;
 }
-/* this is how I set the font family for all my text */
 
+.container {
+    padding: 0;
+}
+/* this is how I set the font family for all my text */
+.banner {
+    padding: 0;
+   max-width: 100%;
+}
 @media only screen and (max-width: 500px) {
     P {
         display: none;
@@ -30,8 +36,17 @@
 body {
     background-color: #FBFBFB;
 }
+header {
+    background-color: #FBFBFB;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    background-size: cover;
+}
 .row {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
 /* this is an alternative to box sizing for ensuring the boxes go inline */
@@ -130,14 +145,11 @@ hr {
 
 .topright {
     position: absolute;
-    top: 3em;
+    top: 0;
     text-align: center;
-    width: 100%;
-    padding: 4px;
     color: red;
-    background-color: none;
-    font-weight: bold;
-    font-size: 50px;
+    background-color: hsla(212, 80%, 42%, 0.28);
+    width: inherit;
 }
 
 .missiontext {
