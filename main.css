@@ -9,7 +9,7 @@
 /* this sets up cross browser box sizing */
 
 
-body, header, nav, footer, section, article, div, .container, .topright, .missiontext {
+/*body, header, nav, footer, section, article, div, .container, .topright, .missiontext {*/
 border: 1px solid red !important;
 }
 /* this sets up a border to easily see our columns settup */
@@ -164,3 +164,16 @@ hr {
     font-size: 75px;
     font-weight: 10;
 }
+   @media screen and (min-width: 414px) {
+        h1 {font-size: 4em}
+        h2 {font-size: 3em}
+        h5 {font-size: 2em}
+       .nameplate {
+        position: absolute;
+        top: 325px;
+        width: inherit;
+        background-color: hsla(212, 80%, 42%, 0.28);
+       }
+       .lightertext {
+       }
+    }
