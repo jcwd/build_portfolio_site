@@ -9,9 +9,9 @@
 /* this sets up cross browser box sizing */
 
 
-body, header, nav, footer, section, article, div, .container, .topright, .missiontext {
+/*body, header, nav, footer, section, article, div, .container, .topright, .missiontext {
 border: 1px solid red !important;
-}
+}*/
 /* this sets up a border to easily see our columns settup */
 
 * {
