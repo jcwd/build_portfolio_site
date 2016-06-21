@@ -7,9 +7,9 @@
 /* this sets up cross browser box sizing */
 
 
-body, header, nav, footer, section, article, div, .container, .topright, .missiontext {
+/*body, header, nav, footer, section, article, div, .container, .topright, .missiontext {
 border: 1px solid red !important;
-}*/
+}*/*/
 /* this sets up a border to easily see our columns settup */
 
 * {
@@ -65,34 +65,42 @@ p {
     font-family: 'Great Vibes', cursive;
     font-size: 2em;
 }
+
+.lightertext {
+    color: hsla(212, 80%, 42%, 0.45);
+    font-family: none;
+    font-size: 1.2em;
+    margin-left: 0;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+
 /* the above margin applies to all p elements and heeps them 10 px from the edge of the box */
 
 h1 {
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
     font-size: 50px;
-    color: #42A5F5;
+    color: #843534;
 }
 
 h2 {
-    text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
-    color: #42A5F5;
+    color: #843534;
 }
 
 h3 {
     text-transform: none;
     font-family: 'Quicksand', sans-serif;
     border: 10px;
-    color: #42A5F5;
+    color: #843534;
 }
 
 h4 {
     text-transform: none;
     font-family: 'Quicksand', sans-serif;
     border: 10px;
-    color: #42A5F5;
+    color: #843534;
 }
 
 h5 {
@@ -135,19 +143,131 @@ hr {
       right: 0;
 }
 
+  .about-text {
+    border: 1px;
+    border-color: hsla(212, 80%, 42%, 0.29);
+    border-style: solid;
+    margin: 2px;
+  }
 /*/*    font-family: 'Great Vibes', cursive;*/
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 356px) {
+  h3 {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+  h4 {
+    font-size: small;
+    line-height:1.1em;
+  }
+  .nameplate {
+    text-align: right;
+  }
+}
 
-    }
+@media screen and (min-width: 374px) {
 
-    h1 {
-        font-size: 40px;
-    }
+  h4 {
+    font-size: small;
 
-    h2 {
-        font-size: 20px;
-    }
+  }
+   .nameplate {
+    text-align: right;
+    margin-left: 40px;
+  }
+   p {
+    font-size: none;
+   }
+}
+
+@media screen and (min-width: 500px) {
+
+  h3 {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+  h4 {
+    font-size: medium;
+    line-height:3.1em;
+  }
+   .nameplate {
+    text-align: right;
+    margin-left: 50px;
+  }
+   .logo {
+    top: 18px;
+   }
+   p {
+    font-size: 3em;
+   }
+}
+
+@media screen and (min-width: 907px) {
+  body{
+    max-width: 907px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+@media screen and (min-width: 719px) {
+  header { order: -2 }
+  .logo {
+    order: -1;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .nameplate {
+    order: 2;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .about-text{ order: 3; }
+  .hr{ order: 4; }
+  .intro{ order: 5; }
+  .projects {
+    order: 6;
+    width: 100%;
+  }
+
+  }
+  #drawer {
+    width: 100%;
+  }
+  .nav__list {
+    width: 100%
+  }
+  .nav__item {
+    width: 25%
+  }
+  a {
+    font-size: 20px;
+  }
+  .hero {
+    width: 50%;
+  }
+  .weather {
+    width: 50%;
+  }
+  .top-news {
+    width: 100%
+  }
+  body {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+  .recent-news {
+    padding-left: 6em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .recent-news {
+    padding-left: 9em;
+  }
+}
+
 
 /*.nameplate {
     text-align: center;
