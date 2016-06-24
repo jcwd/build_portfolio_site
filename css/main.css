@@ -54,6 +54,11 @@ p {
 }
 /* the above margin applies to all p elements and heeps them 10 px from the edge of the box */
 
+.image-resposive {
+    border-color: hsla(212, 80%, 42%, 0.22);
+    border-width: 1px;
+    border-style: solid;
+}
 h1 {
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
